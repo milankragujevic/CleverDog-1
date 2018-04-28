@@ -1,6 +1,31 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debugConfig {
+            keyAlias "suwenandroidkeystore"
+            keyPassword "123456"
+            storeFile file("..\\app\\SuwenAndroidKeystore.jks")
+            storePassword "123456"
+        }
+        config {
+            keyAlias "suwenandroidkeystore"
+            keyPassword "123456"
+            storeFile file("..\\app\\SuwenAndroidKeystore.jks")
+            storePassword "123456"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+//            signingConfig signingConfigs.config
+            signingConfig signingConfigs.debugConfig
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
     defaultConfig {

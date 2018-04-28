@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/component_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_fengexian"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_big"
+        android:layout_marginTop="@dimen/space_big"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_big_40"
+        android:paddingRight="@dimen/space_big_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_lr_password" />
+
+            <EditText
+                android:id="@+id/et_old"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="旧密码"
+                android:inputType="textPassword"
+                android:padding="@dimen/space"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font" />
+
+            <CheckBox
+                android:id="@+id/cb_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/sel_cb_button_password"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fengexian"
+            android:background="@color/me_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_lr_password" />
+
+            <EditText
+                android:id="@+id/et_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="新密码 6-16个字符"
+                android:inputType="textPassword"
+                android:padding="@dimen/space"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font" />
+
+            <CheckBox
+                android:id="@+id/cb_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/sel_cb_button_password"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fengexian"
+            android:background="@color/me_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_lr_password" />
+
+            <EditText
+                android:id="@+id/et_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:padding="@dimen/space"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font" />
+
+            <CheckBox
+                android:id="@+id/cb_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/sel_cb_button_password"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fengexian"
+            android:background="@color/me_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_big"
+        android:layout_marginLeft="@dimen/space_big_40"
+        android:layout_marginRight="@dimen/space_big_40"
+        android:layout_marginTop="@dimen/space_big"
+        android:background="@color/dominant_hue"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space"
+        android:paddingTop="@dimen/space"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_big" />
+
+</LinearLayout>

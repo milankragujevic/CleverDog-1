@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">灵狗</string>
+    <!--经度偏移量 100-->
+    <string name="longitude_10k">0.22</string>
+    <string name="longitude_100_old">0.0012</string>
+    <string name="longitude_100">0.0045</string>
+    <string name="longitude_20">0.00044</string>
+    <!--<string name="longitude">0.9</string>-->
+    <!--纬度偏移量 100-->
+    <string name="latitude_10k">0.09</string>
+    <string name="latitude_100_old">0.002167</string>
+    <string name="latitude_100">0.011</string>
+    <string name="latitude_20">0.00018</string>
+    <!--<string name="latitude">0.9</string>-->
+    <!--100米方向偏移量-->
+    <!--<string name="direction_100">11.309933</string>-->
+    <!--<string name="direction_100">22.5</string>-->
+    <string name="direction_100">40</string>
+    <!--20米方向偏移量-->
+    <!--<string name="direction_20">45.0</string>-->
+    <string name="direction_20">80</string>
+
+    <!--语音素材-->
+    <string name="wz_rr_100"><!--100米-->有车让人违章抓拍</string>
+    <string name="wz_sx_100"><!--100米-->有轧实线违章抓拍</string>
+    <string name="wz_hw_100"><!--100米-->有黄色网格违章抓拍</string>
+    <string name="wz_dt_100"><!--100米-->有直行道掉头违章抓拍</string>
+    <string name="wz_md_100"><!--100米-->有鸣笛违章抓拍；</string>
+    <string name="wz_yg_100"><!--100米-->有远光灯违章抓拍</string>
+
+    <string name="wz_rr_20"><!--20米-->有车让人违章抓拍</string>
+    <string name="wz_sx_20"><!--20米-->有轧实线违章抓拍</string>
+    <string name="wz_hw_20"><!--20米-->有黄色网格违章抓拍</string>
+    <string name="wz_dt_20"><!--20米-->有直行道掉头违章抓拍</string>
+    <string name="wz_md_20"><!--20米-->有鸣笛违章抓拍；</string>
+    <string name="wz_yg_20"><!--20米-->有远光灯违章抓拍</string>
+
+    <string name="wz_jt">当前路段为禁停路段</string>
+
+
+</resources>

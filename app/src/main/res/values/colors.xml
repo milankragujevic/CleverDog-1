@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccents">#F12F2F</color>
+    <color name="whitesmoke">#F5F5F5</color><!--烟白色 -->
+    <color name="whitesmoke_50">#66F5F5F5</color><!--烟白色 -->
+    <color name="title_bg">#FCFCFC</color><!--标题背景色-->
+    <color name="black">#000000</color>
+    <color name="coupon">#F7494A</color><!--红色 -->
+    <color name="textColor_goods_name">#848484</color>
+    <color name="fengexian1">#D9D9D9</color><!--分割线-->
+    <color name="fengexian2">#F1F1F1</color>
+    <color name="colorGray6">#ff666666</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="selectColor">#F79797</color>
+    <color name="transparent">#00000000</color><!--透明 -->
+    <color name="translucent">#66000000</color><!--半透明 -->
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="comment">#FFEFEF</color><!--白色 -->
+    <color name="green">#3CC55D</color><!--白色 -->
+
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="grey">#C6C6C6</color><!--灰色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="clickColor">#F46263</color><!--红色 -->
+    <color name="notclickColor">#AEAEAE</color><!--红色 -->
+    <color name="darkorange">#FF8C00</color><!--暗桔黄色 -->
+    <color name="blue">#0000FF</color><!--蓝色 -->
+    <color name="lightgrey">#D3D3D3</color><!--亮灰色 -->
+    <color name="darkgray">#A9A9A9</color><!--暗灰色 -->
+    <color name="frenchgrey">#F5F5F5</color><!--浅灰色 -->
+    <color name="blue_title">#0000ff</color><!--蓝色 -->
+    <color name="fragment_top_menu_bg">#F1F1F1</color><!-- fragment顶部滑动菜单栏背景色 -->
+    <color name="toptitlebackagecolor">#0A64D2</color><!--顶部标题栏背景色 -->
+    <color name="lightgray">#D3D3D3</color><!--亮灰色 -->
+    <color name="me_bg">#F0EFF5</color><!--亮灰色 -->
+
+    <color name="titbar_color">#0589ba</color>
+    <color name="list_divider_line">#545454</color>
+    <color name="me_top_bg">#f02f2f</color><!--我的页面上半部分背景颜色-->
+    <color name="golden">#C7A96B</color><!--金色-->
+    <color name="dominant_hue">#ef1514</color><!--主题颜色-->
+    <color name="fenhong">#FDF1F1</color><!--cb粉红色背景-->
+</resources>

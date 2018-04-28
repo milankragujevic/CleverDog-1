@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_main" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drawer"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/me_bg"
+            android:padding="@dimen/space"
+            android:text="设置"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:text="选择提示类别（可多选）"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_crr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="车让人违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+
+                <CheckBox
+                    android:id="@+id/cb_hwg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="黄色网格违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+
+                <CheckBox
+                    android:id="@+id/cb_md"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="鸣笛违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_ysx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="轧实线违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+
+                <CheckBox
+                    android:id="@+id/cb_dt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="直行道掉头违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+
+                <CheckBox
+                    android:id="@+id/cb_ygd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="远光灯违章"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fengexian"
+            android:background="@color/me_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:text="禁停路段"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_jt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sel_cb_button_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sel_cb_button"
+                    android:drawablePadding="@dimen/space_little"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/space"
+                    android:text="禁停路段"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fengexian"
+            android:background="@color/me_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:gravity="center"
+            android:padding="@dimen/space"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

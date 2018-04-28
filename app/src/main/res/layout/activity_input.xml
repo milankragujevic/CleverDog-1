@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.soowin.cleverdog.activity.index.InputActivity">
+
+    <include layout="@layout/component_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mv_my_mv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_crr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 车让人违章" />
+
+            <RadioButton
+                android:id="@+id/rb_ysx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 压实线违章" />
+
+            <RadioButton
+                android:id="@+id/rb_hwg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 黄色网格违章" />
+
+            <RadioButton
+                android:id="@+id/rb_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 直行道掉头违章" />
+
+            <RadioButton
+                android:id="@+id/rb_md"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 鸣笛违章" />
+
+            <RadioButton
+                android:id="@+id/rb_ygd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 远光灯违章" />
+
+            <RadioButton
+                android:id="@+id/rb_ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/sel_cb_button"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text=" 易混淆违章" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="违章点名称"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/space"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dominant_hue"
+                android:padding="@dimen/space"
+                android:text="上传"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_end"
+            android:layout_alignParentLeft="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/sel_cb_button"
+            android:padding="@dimen/space"
+            android:text=" 开始采集坐标" />
+    </RelativeLayout>
+</LinearLayout>
